@@ -1,0 +1,208 @@
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* navbar */
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+}
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+
+.nav-logo {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a {
+  color: black;
+  padding: 10px;
+}
+.navbar ul li a:hover {
+  background-color: #0C6EFD;
+  color:white;
+}
+ul li a {
+  margin-top: 10px;
+}
+.d-grid button {
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+#header2 {
+  margin-top: 100px;
+}
+  .navbar {
+    background: white;
+  }
+  #header2 h1 {
+    margin-left: 15px;
+    }
+  #header2 p {
+    margin-left: 15px;
+  }
+  #header2 button {
+    margin-left: 15px;
+  }
+  
+  /* footer */
+  footer.footer {
+     height: 300px;
+     width: 100%;
+     background-color: #333333;
+  }
+  .footer a {
+     text-decoration: none;
+  }
+  
+  p.copyright {
+     color: #fff;
+     line-height: 40px;
+     font-size: 0.7em;
+  }
+  /* destop */
+  @media only screen and (max-width: 992px) {
+     #header2 h1 {
+        margin-top: 70px;
+        font-size: 50px;
+     }
+       #profil .profil-img {
+          width: 60px;
+       }
+       #menu .icon-menu {
+          width: 60px;
+       }
+  }
+     
+/* mobile */
+@media only screen and (max-width: 576px) {
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow:
+      0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  #header2 {
+    margin-top: 50px;
+  }
+  #header2 h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  #header2 p {
+    margin-left: 15px;
+  }
+  #header2 button {
+    margin-left: 15px;
+  }
+  .navbar {
+    height: 50px;
+    background: white;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+.d-grid {
+  padding-right:12px;
+}
+  .nav-item {
+    margin: 0.1rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  #icon-base img {
+    width: 70px;
+    display: block;
+    margin: auto;
+  }
+  #phone .phone-number {
+     width: 40px;
+  }
+  #phone .ilustrasi-phone {
+     display: block;
+     margin: auto;
+     width: 230px;
+  }
+  #profil .profil-img {
+     width: 40px;
+  }
+  #menu p {
+     display: block;
+     margin: auto;
+     width: 170px;
+  }
+  #menu .icon-menu {
+     width: 40px;
+  }
+
+}
+.hamburger.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
